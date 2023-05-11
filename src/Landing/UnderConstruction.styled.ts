@@ -4,12 +4,13 @@ export const MainContainer = styled.div`
     position: absolute;
     top: 0;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     color: white;
     background: ${props => props.theme.underConstructionBgColor};
     display: flex;
     flex-direction: column;
+    user-select: none;
 `
 
 export const LogoContainer = styled.div`
