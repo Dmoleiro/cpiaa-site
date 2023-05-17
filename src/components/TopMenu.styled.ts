@@ -64,16 +64,25 @@ export const MobileMenuPanel = styled.div<TopMenuStyleProps>`
   display: ${({ open }) => (open ? 'block' : 'none')};
 `
 
+export const DesktopMenuPanelWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`
+
 export const DesktopMenuPanel = styled.div`
   visibility: hidden;
+  margin: 10px 50px;
 
   @media (min-width: 800px) {
     visibility: visible;
   }
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  border-radius: ${props => props.theme.mainBorderRadius};
+  background: ${props => props.theme.regular};
 `
 
 export const MenuItem = styled.div`
@@ -86,6 +95,7 @@ export const MenuItem = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 4px;
 
   &:hover {
     background: yellow;

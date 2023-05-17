@@ -25,6 +25,7 @@ const TopMenu: React.FC = () => {
 
     return (
         <Styled.TopMenuWrapper data-testid={TOP_MENU_WRAPPER_TEST_ID}>
+            {/* mobile menu */}
             <Styled.MenuButtonContainer>
                 <Styled.MenuButton onClick={handleClick}>
                     <Styled.TopBar open={open} />
@@ -35,9 +36,12 @@ const TopMenu: React.FC = () => {
                     </Styled.MobileMenuPanel>
                 </Styled.MenuButton>
             </Styled.MenuButtonContainer>
-            <Styled.DesktopMenuPanel>
-                {getMenuItems()}
-            </Styled.DesktopMenuPanel>
+            {/* desktop menu */}
+            <Styled.DesktopMenuPanelWrapper>
+                <Styled.DesktopMenuPanel>
+                    {getMenuItems()}
+                </Styled.DesktopMenuPanel>
+            </Styled.DesktopMenuPanelWrapper>
         </Styled.TopMenuWrapper>
     );
 }
