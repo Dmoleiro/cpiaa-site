@@ -1,10 +1,29 @@
 import styled from 'styled-components';
 
 interface TopMenuStyleProps {
-  open: boolean
+  open?: boolean,
+  selected?: boolean
 }
 
 export const TopMenuWrapper = styled.div``
+
+export const LogoContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  svg {
+    height: 200px;
+    margin-top: -70px;
+    margin-bottom: -70px;
+
+    @media (max-width: 799px) {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+`
 
 export const MenuButtonContainer = styled.div`
   padding: 0;
@@ -62,17 +81,29 @@ export const MobileMenuPanel = styled.div<TopMenuStyleProps>`
   padding: 10px;
   background-color: #f1f1f1;
   display: ${({ open }) => (open ? 'block' : 'none')};
+  color: ${props => props.theme.white};
+  font-size: 15px;
+  background: ${props => props.theme.mobileMenuBackground};
 `
 
 export const DesktopMenuPanelWrapper = styled.div`
+  display: none;
+  visibility: hidden;
+
+  @media (min-width: 800px) {
+    visibility: visible;
+    display: flex;
+  }
+
+  height: 70px;
   width: 100%;
-  display: flex;
   justify-content: center;
+  /* https://cssgradient.io/ */
+  background: ${props => props.theme.topMenuBackground};
 `
 
 export const DesktopMenuPanel = styled.div`
   visibility: hidden;
-  margin: 10px 50px;
 
   @media (min-width: 800px) {
     visibility: visible;
@@ -80,28 +111,35 @@ export const DesktopMenuPanel = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  border-radius: ${props => props.theme.mainBorderRadius};
-  background: ${props => props.theme.regular};
+  color: ${props => props.theme.white};
+  font-size: 15px;
+  font-weight: 600;
+  height: 100%;
 `
 
-export const MenuItem = styled.div`
+export const MenuItem = styled.div<TopMenuStyleProps>`
   width: 100%;
   text-align: center;
-  font-weight: bold;
-  font-size: 13px;
-  color: ${props => props.theme.mainTextColor};
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4px;
+  margin: 0 6px;
 
-  &:hover {
-    background: yellow;
+  /* Desktop */
+  @media (min-width: 800px) {
+    border-bottom: 4px solid ${props => props.selected ? 'white' : 'transparent'};
   }
 
+  /* Mobile */
   @media (max-width: 799px) {
     height: 50px;
+    margin: 0;
+    font-weight: ${props => props.selected ? 'bold' : 'regular'};
+    border-bottom: 0.5px solid ${props => props.theme.white};
+
+    &:last-child{
+      border-bottom: 0;
+    }
   }
 `

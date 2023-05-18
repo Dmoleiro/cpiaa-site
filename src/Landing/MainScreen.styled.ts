@@ -6,6 +6,10 @@ export const MainContainer = styled.div`
     background-image: url('under-construction-bg-small.jpg');
     background-position: bottom;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
 `
 
 export const BackgroundImage = styled.img`

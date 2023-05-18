@@ -1,3 +1,4 @@
+import ContentSection from "../components/ContentSection"
 import TopMenu from "../components/TopMenu"
 
 import * as Styled from './MainScreen.styled'
@@ -8,6 +9,7 @@ const MainScreen: React.FC = () => {
   return (
     <Styled.MainContainer data-testid={MAIN_CONTAINER_TEST_ID}>
       <TopMenu />
+      <ContentSection />
     </Styled.MainContainer>
   )
 }

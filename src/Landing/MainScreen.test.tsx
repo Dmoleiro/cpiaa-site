@@ -1,15 +1,10 @@
-import { render, RenderResult, screen } from '@testing-library/react'
-import { mainTheme } from '../theme.styled'
-import { ThemeProvider } from 'styled-components'
+import { screen } from '@testing-library/react'
+import { renderComponent } from '../setupTest'
 import MainScreen, { MAIN_CONTAINER_TEST_ID } from './MainScreen'
 
-describe('Logo', () => {
-    const setupTest = (additionalProps?: Partial<React.ComponentProps<typeof MainScreen>>): RenderResult => {
-        return render(
-            <ThemeProvider theme={mainTheme}>
-                <MainScreen {...additionalProps} />
-            </ThemeProvider>
-        )
+describe('MainScreen', () => {
+    const setupTest = (additionalProps?: Partial<React.ComponentProps<typeof MainScreen>>) => {
+        renderComponent(<MainScreen {...additionalProps} />)
     }
 
     it('When the component renders, expect the correct elements to be shown', () => {

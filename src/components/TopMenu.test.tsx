@@ -1,15 +1,10 @@
-import { render, RenderResult, screen } from '@testing-library/react'
-import { mainTheme } from '../theme.styled'
-import { ThemeProvider } from 'styled-components'
+import { screen } from '@testing-library/react'
+import { renderComponent } from '../setupTest'
 import TopMenu, { TOP_MENU_WRAPPER_TEST_ID } from './TopMenu'
 
-describe('Logo', () => {
-    const setupTest = (additionalProps?: Partial<React.ComponentProps<typeof TopMenu>>): RenderResult => {
-        return render(
-            <ThemeProvider theme={mainTheme}>
-                <TopMenu {...additionalProps} />
-            </ThemeProvider>
-        )
+describe('TopMenu', () => {
+    const setupTest = (additionalProps?: Partial<React.ComponentProps<typeof TopMenu>>) => {
+        renderComponent(<TopMenu {...additionalProps} />)
     }
 
     it('When the component renders, expect the correct elements to be shown', () => {
