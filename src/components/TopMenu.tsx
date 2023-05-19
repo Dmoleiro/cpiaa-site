@@ -25,6 +25,10 @@ const TopMenu: React.FC = () => {
         'Acordos Seguradoras'
     ]
 
+    const handleLogoClick = () => {
+        window.location.reload()
+    }
+
     const handleClick = () => {
         toggleOpenMenu(!open);
     };
@@ -42,7 +46,7 @@ const TopMenu: React.FC = () => {
     return (
         <Styled.TopMenuWrapper data-testid={TOP_MENU_WRAPPER_TEST_ID}>
             <Styled.LogoContainer>
-                <Logo />
+                <Logo onClick={handleLogoClick} />
             </Styled.LogoContainer>
             {/* mobile menu */}
             <Styled.MenuButtonContainer>

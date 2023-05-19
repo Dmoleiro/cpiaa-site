@@ -1,10 +1,15 @@
 import styled from 'styled-components'
 
-export const LogoContainer = styled.div`
+interface LogoStyleProps {
+    isClickable: boolean
+}
+
+export const LogoContainer = styled.div<LogoStyleProps>`
     svg {
         max-width: 100vw;
         
         rect {
+            cursor: ${props => props.isClickable ? 'pointer' : 'default'};
             fill: transparent;
         }
         #sub-text {

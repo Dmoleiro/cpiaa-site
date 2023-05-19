@@ -1,10 +1,11 @@
 
 
-import { ReactElement, useEffect, useState } from 'react'
+import { ReactElement, Suspense, useEffect, useState } from 'react'
 import * as Styled from './LandingPage.styled'
 
-import UnderConstruction from './UnderConstruction'
 import assets from '../assets/assets'
+import Loading from './Loading'
+import UnderConstruction from './UnderConstruction'
 
 export const LANDING_PAGE_CONTAINER_TEST_ID = 'landing-page-container-test-id'
 
@@ -31,28 +32,18 @@ const LandingPage: React.FC = () => {
         toggleLoadingAssets(false)
     }
 
-    const getLoadingIcon = (): ReactElement => {
-        return (
-            <Styled.RippleWrapper>
-                <Styled.RippleContainer>
-                    <Styled.RippleDiv />
-                    <Styled.RippleDiv style={{ animationDelay: '-0.5s' }} />
-                </Styled.RippleContainer>
-                <Styled.LoadingText>Loading ...</Styled.LoadingText>
-            </Styled.RippleWrapper>
-        )
-    }
-
     const getLandingContent = (): ReactElement => {
-        if (isLoadingAssets) return getLoadingIcon()
+        if (isLoadingAssets) return <Loading />
 
         return <UnderConstruction />
     }
 
     return (
-        <Styled.LandingPageMainContainer data-testid={LANDING_PAGE_CONTAINER_TEST_ID}>
-            {getLandingContent()}
-        </Styled.LandingPageMainContainer>
+        <Suspense fallback={<Loading />}>
+            <Styled.LandingPageMainContainer data-testid={LANDING_PAGE_CONTAINER_TEST_ID}>
+                {getLandingContent()}
+            </Styled.LandingPageMainContainer>
+        </Suspense>
     )
 }
 

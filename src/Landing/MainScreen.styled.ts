@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import backgroundMain from '../assets/backgrounds/under-construction-bg-small.jpg'
 
 export const MainContainer = styled.div`
     height: 100vh;
     width: 100vw;
-    background-image: url('under-construction-bg-small.jpg');
+    background-image: url(${backgroundMain});
     background-position: bottom;
     background-size: cover;
     display: flex;
