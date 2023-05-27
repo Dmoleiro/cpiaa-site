@@ -15,3 +15,7 @@ export const MobileContentTitle = styled.div`
         max-width: 90%;
     }
 `
+
+export const ContactsContent = styled.div`
+    min-width: 8000px;
+`

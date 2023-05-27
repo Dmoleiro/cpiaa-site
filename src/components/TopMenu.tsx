@@ -26,7 +26,8 @@ const TopMenu: React.FC = () => {
     ]
 
     const handleLogoClick = () => {
-        window.location.reload()
+        //TODO: fix the logo clickable space first to make mobile usage better
+        //window.location.reload()
     }
 
     const handleClick = () => {

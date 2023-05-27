@@ -22,12 +22,17 @@ const WhoWeAre: React.FC = () => {
             <br></br>
             <br></br>
             <p><b>Drª Daniela Santos</b></p>
-            <img src={daniela} />
+
+            <img src={daniela} loading="eager" />
+            {/* react-image */}
+            {/* <Img src={daniela} alt="daniela" loader={<Loading />} /> */}
+
             <span>
                 <p>Sou Psicóloga Educacional, tendo terminado o mestrado em Psicologia, na área Educacional, em 2014 no ISPA-IU. Desde cedo que a minha paixão sempre foram as crianças/jovens e, por isso, a minha motivação sempre foi trabalhar com crianças e adolescentes independentemente das suas dificuldades. O meu percurso passou por diferentes centros de desenvolvimento infantil realizando diversos tipos de apoio, ao nível da intervenção precoce, da estimulação de competências nos diversos domínios da Psicologia, na avaliação de crianças e jovens, na elaboração de projetos de intervenção em diferentes áreas e na intervenção direta com as crianças, jovens e, sobretudo no estabelecimento de estratégias diretamente com Pais. Tendo sempre em consideração os diferentes contextos onde a criança está inserida, intervindo tanto em contexto escolar como em contexto de gabinete. O trabalho direto com todos os intervenientes do processo é uma prioridade, havendo a necessidade de estabelecer e partilhar estratégias de colaboração entre todos para que a criança/jovem obtenha as aquisições pretendidas. Sou membro efetivo da OPP – Ordem dos Psicólogos Portugueses desde 2014 e trabalho, essencialmente, com crianças com perturbações do neurodesenvolvimento.</p></span>
             <br></br>
             <p><b>Professora Alexandra Enes</b></p>
-            <img src={alexandra} />
+            <img src={alexandra} loading="eager" />
+            {/* <Img src={alexandra} alt="alexandra" loader={<Loading />} /> */}
             <span>
                 <p>O gosto pela área de educação veio desde cedo. Desde os primeiros anos que brincava às escolas, fazia o papel de professora e explicava as coisas como se tivesse uma turma de alunos à minha frente.
                     Após a primeira licenciatura, o gosto pela área de educação foi aumentando, o interesse em formações e especializações também, tornando-se um interesse recorrente e uma busca incessante de novas áreas.
