@@ -27,7 +27,7 @@ const ContentSection: React.FC = () => {
 
     return (
         <Styled.ContentSectionContainer data-testid={CONTENT_SECTION_CONTAINER_TEST_ID} onClick={(e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-            e.preventDefault()
+            // e.preventDefault()
             e.stopPropagation()
         }}>
             {getSelectedContent()}

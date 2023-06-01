@@ -21,7 +21,37 @@ export const ContentSectionPanel = styled.section<ContentSectionStyleProps>`
     max-height: 100%;
     overflow: auto;
     max-width: 70%;
+    
     @media (max-width: 799px) {
         max-width: 90%;
     }
+
+    /* For WebKit-based browsers (Chrome, Safari, Opera) */
+    &::-webkit-scrollbar {
+    width: 8px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+    background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+    background: #8888888B;
+    border-radius: 4px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+    background: #5555558B;
+    }
+
+    scrollbar-color: gray transparent;
+    scrollbar-width: thin;
+    
+    &::-moz-scrollbar-track {
+    border-radius: 4px; /* Adjust the value as needed */
+    }
+
 `
