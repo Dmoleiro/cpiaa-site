@@ -1,6 +1,12 @@
 import styled from 'styled-components'
 
 export const PsychologyContainer = styled.div`
+    a {
+        color: blue;
+        font-weight: 500;
+        margin-left: 20px;
+        text-decoration: underline;
+    }
 `
 
 export const MobileContentTitle = styled.div`

@@ -4,6 +4,7 @@ import * as Styled from './Psychology.styled';
 export const PSYCHOLOGY_CONTAINER_TEST_ID = 'psychology-container-test-id'
 
 const Psychology: React.FC = () => {
+
     return (
         <Styled.PsychologyContainer data-testid={PSYCHOLOGY_CONTAINER_TEST_ID}>
             <Styled.MobileContentTitle>{'Psicologia'}</Styled.MobileContentTitle>
@@ -20,8 +21,11 @@ const Psychology: React.FC = () => {
                     <li>Orientação Vocacional e Escolar (básico; secundário)</li>
                     <li>Dinâmicas de grupo/Workshops - do 5º ao 12º ano de acordo com os temas (até 8 elementos)</li>
                     <li>Tertúlias de Pais, Educadores, Cuidadores e Família (até 8 elementos)</li>
-
                 </ul>
+                <p></p>
+                <b>Registo da entidade reguladora da saúde:</b>
+                <p></p>
+                <a href={`${window.location.origin}/docs/Certidao-ERS-DanielaSantos.pdf`} target="_blank">Certidão</a>
             </span>
         </Styled.PsychologyContainer>
     )

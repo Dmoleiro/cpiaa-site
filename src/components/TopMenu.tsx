@@ -40,7 +40,7 @@ const TopMenu: React.FC = () => {
 
     const getMenuItems = (): ReactElement[] => {
         return menuItemDescriptions.map((item: string, index: number) => {
-            return <Styled.MenuItem selected={selectedTabIndex === index} onClick={() => handleMenuItemClick(index)}>{item}</Styled.MenuItem>
+            return <Styled.MenuItem key={index} selected={selectedTabIndex === index} onClick={() => handleMenuItemClick(index)}>{item}</Styled.MenuItem>
         })
     }
 

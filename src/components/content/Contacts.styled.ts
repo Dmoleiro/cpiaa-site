@@ -1,6 +1,14 @@
 import styled from 'styled-components'
 
 export const ContactsContainer = styled.div`
+    overflow-x: hidden;
+
+    iframe {
+        border: 0;
+        border-radius: 5px;
+        height: 450px;
+        width: 600px;
+    }
 `
 
 export const MobileContentTitle = styled.div`
