@@ -36,7 +36,7 @@ const WhoWeAre: React.FC = () => {
             {/* <Img src={alexandra} alt="alexandra" loader={<Loading />} /> */}
             <span>
                 <p>O gosto pela área de educação veio desde cedo. Desde os primeiros anos que brincava às escolas, fazia o papel de professora e explicava as coisas como se tivesse uma turma de alunos à minha frente.
-                    Após a primeira licenciatura, o gosto pela área de educação foi aumentando, o interesse em formações e especializações também, tornando-se um interesse recorrente e uma busca incessante de novas áreas.
+                    Após a primeira licenciatura, o gosto pela área de educação foi aumentando, o interesse em formações e especializações também, tornando-se um interesse recorrente e uma busca incessante por novas áreas.
                     Com o tempo, fui-me apercebendo das lacunas existentes no ensino, nas dificuldades das crianças nas suas aprendizagens e nas dificuldades dos pais em ter tempo, no meio da sua vida cada vez mais agitada, no acompanhamento dos seus filhos na sua vida escolar.
                     A sociedade impõe-nos cada vez mais tempo, as horas no trabalho, a logística da casa, o desgaste e stress diário, complementado com a exigência da escola que é imposta às crianças, fez-me perceber que existia a necessidade de apoiar tanto os pais como as crianças e jovens na sua vida escolar.
                     Neste sentido, simultaneamente com o trabalho de Educadora de Infância, iniciei as explicações do 1.º ao 3.º ciclo. Com cada vez mais procura, em 2015 iniciei um projeto que se baseava na abertura de um centro de explicações em Vale do Paraíso, Azambuja.

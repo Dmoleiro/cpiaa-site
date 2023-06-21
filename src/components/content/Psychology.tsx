@@ -22,10 +22,10 @@ const Psychology: React.FC = () => {
                     <li>Dinâmicas de grupo/Workshops - do 5º ao 12º ano de acordo com os temas (até 8 elementos)</li>
                     <li>Tertúlias de Pais, Educadores, Cuidadores e Família (até 8 elementos)</li>
                 </ul>
-                <p></p>
+                {/* <p></p>
                 <b>Registo da entidade reguladora da saúde:</b>
                 <p></p>
-                <a href={`${window.location.origin}/docs/Certidao-ERS-DanielaSantos.pdf`} target="_blank">Certidão</a>
+                <a href={`${window.location.origin}/docs/Certidao-ERS-DanielaSantos.pdf`} target="_blank">Certidão</a> */}
             </span>
         </Styled.PsychologyContainer>
     )
