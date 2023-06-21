@@ -15,6 +15,7 @@ const ComplementaryAreas: React.FC = () => {
                     <li>Terapia Ocupacional</li>
                     <li>Pediatria do Desenvolvimento</li>
                     <li>Pedopsiquiatria</li>
+                    <li>Fisioterapia</li>
                 </ul>
             </span>
         </Styled.ComplementaryAreasContainer>

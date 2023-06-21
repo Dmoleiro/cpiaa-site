@@ -9,18 +9,6 @@ const WhoWeAre: React.FC = () => {
     return (
         <Styled.WhoWeAreContainer data-testid={WHO_ARE_WE_CONTAINER_TEST_ID}>
             <Styled.MobileContentTitle>{'Quem somos'}</Styled.MobileContentTitle>
-            <p><b>O Projecto CPIAA</b></p>
-            <span>
-                <p>Este projeto ao qual, carinhosamente, apelidamos de CPIAA – Centro de Psicologia Infantojuvenil e Apoio às Aprendizagens, surgiu de uma parceria entre duas profissionais, colegas e amigas cuja paixão pela educação tem vindo a dar frutos.
-                    A paixão, dedicação e empenho com o qual trabalhamos tem vindo a ser um fator de desenvolvimento pessoal e profissional, todos os dias.
-                    O Projeto CPIAA – Centro de Psicologia Infantojuvenil e Apoio às Aprendizagens, vem complementar cada uma de nós, cada criança e jovem com o qual nos cruzamos, que conjuntamente com a família, com educadores e professores fazendo com que as aprendizagens sejam harmoniosas e gratificantes.
-                    Estamos gratas pela presença de todas as crianças e jovens com quem trabalhamos e acreditamos, genuinamente, que somos sempre recordadas com muito carinho, admiração e amor. Cada obstáculo enfrentado é uma conquista que, juntos, conseguimos contornar.
-                    A sensação de dever cumprido é um sinal de felicidade constante para transmitirmos o bem-estar a todos os que, com gratidão, nos cruzamos.</p>
-                <p>Com muito carinho,
-                    Alexandra e Daniela.</p>
-            </span>
-            <br></br>
-            <br></br>
             <p><b>Drª Daniela Santos</b></p>
 
             <img src={daniela} loading="eager" />

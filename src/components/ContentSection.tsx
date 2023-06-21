@@ -7,6 +7,7 @@ import Contacts from './content/Contacts'
 import GenericContent from './content/GenericContent'
 import HealthInsurances from './content/HealthInsurances'
 import Partnerships from './content/Partnerships'
+import Project from './content/Project'
 import Psychology from './content/Psychology'
 import Scheduling from './content/Scheduling'
 import StudySupport from './content/StudySupport'
@@ -17,7 +18,7 @@ export const CONTENT_SECTION_CONTAINER_TEST_ID = 'content-section-container-test
 const ContentSection: React.FC = () => {
     const selectedTabIndex = useSelector((state: StoreState) => state.mainScreenSlice.selectedTabIndex)
 
-    const contentList: ReactElement[] = [<WhoWeAre />, <Psychology />, <StudySupport />, <ComplementaryAreas />, <Contacts />, <Scheduling />, <Partnerships />, <HealthInsurances />]
+    const contentList: ReactElement[] = [<Project />, <WhoWeAre />, <Psychology />, <StudySupport />, <ComplementaryAreas />, <Contacts />, <Scheduling />, <Partnerships />, <HealthInsurances />]
 
     const getSelectedContent = (): ReactElement => {
         return <Styled.ContentSectionPanel contentIndex={selectedTabIndex}>

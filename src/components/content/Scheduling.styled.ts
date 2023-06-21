@@ -43,7 +43,7 @@ export const SchedulingFormItemInput = styled.input`
     min-height: 40px;
     line-height: 40px;
     outline: none;
-    background-color: ${props => props.theme.contentEvenSectionBackground};
+    background-color: ${props => props.theme.contentOddSectionBackground};
     font-size: 16px;
     box-shadow: none;
     border: 0;
@@ -62,7 +62,7 @@ export const SchedulingFormItemTextArea = styled.textarea`
     border-radius: ${props => props.theme.mainBorderRadius};
     min-height: 140px;
     outline: none;
-    background-color: ${props => props.theme.contentEvenSectionBackground};
+    background-color: ${props => props.theme.contentOddSectionBackground};
     font-size: 16px;
     box-shadow: none;
     resize: none;
@@ -106,5 +106,5 @@ export const ErrorPanelContainer = styled.div`
 `
 
 export const SendMailButton = styled.button`
-    background-color: ${props => props.theme.contentEvenSectionBackground};
+    background-color: ${props => props.theme.contentOddSectionBackground};
 `

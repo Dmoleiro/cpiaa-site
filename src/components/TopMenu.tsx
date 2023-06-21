@@ -15,6 +15,7 @@ const TopMenu: React.FC = () => {
     const dispatch = useDispatch()
 
     const menuItemDescriptions: string[] = [
+        'O CPIAA',
         'Quem Somos',
         'Psicologia',
         'Apoio às Aprendizagens',

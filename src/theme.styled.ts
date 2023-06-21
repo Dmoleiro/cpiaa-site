@@ -5,8 +5,8 @@ export const mainTheme = {
     mainBorderRadius: '5px',
     topMenuBackground: 'linear-gradient(90deg, rgba(134,101,153,1) 0%, rgba(94,152,149,1) 50%, rgba(119,181,124,1) 100%)',
     mobileMenuBackground: '#866599',
-    contentEvenSectionBackground: '#5e9895E6',
-    contentOddSectionBackground: '#866599E6',
+    contentEvenSectionBackground: '#866599E6',
+    contentOddSectionBackground: '#5e9895E6',
 
     light: '#83d4d0',
     regular: '#5e9895',

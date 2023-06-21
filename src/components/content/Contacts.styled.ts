@@ -27,31 +27,13 @@ export const MobileContentTitle = styled.div`
 export const ContactsContent = styled.div`
 `
 
-export const SocialLinksContainer = styled.div`
+export const ContactLine = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-`
-
-export const SocialItem = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin-right: 10px;
-    margin-bottom: 15px;
-
-    svg {
-        height: 25px;
-        width: 25px;
-    }
-
-    a {
-        color: ${props => props.theme.white};
-    }
 
     img {
-        max-height: 50px;
+        filter: invert(1);
+        max-height: 25px;
+        margin-right: 15px;
     }
 `
-
