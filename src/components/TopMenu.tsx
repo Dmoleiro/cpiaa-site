@@ -56,9 +56,11 @@ const TopMenu: React.FC = () => {
                     <Styled.TopBar open={open} />
                     <Styled.MiddleBar open={open} />
                     <Styled.BottomBar open={open} />
-                    <Styled.MobileMenuPanel open={open}>
-                        {getMenuItems()}
-                    </Styled.MobileMenuPanel>
+                    <Styled.MobileMenuWrapper>
+                        <Styled.MobileMenuPanel open={open} selectedIndex={selectedTabIndex}>
+                            {getMenuItems()}
+                        </Styled.MobileMenuPanel>
+                    </Styled.MobileMenuWrapper>
                 </Styled.MenuButton>
             </Styled.MenuButtonContainer>
             {/* desktop menu */}

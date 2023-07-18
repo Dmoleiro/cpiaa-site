@@ -3,6 +3,7 @@ import styled from 'styled-components';
 interface TopMenuStyleProps {
   open?: boolean,
   selected?: boolean
+  selectedIndex?: number
 }
 
 export const TopMenuWrapper = styled.div``
@@ -72,18 +73,23 @@ export const BottomBar = styled(Bar) <TopMenuStyleProps>`
   transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'none')};
 `
 
-export const MobileMenuPanel = styled.div<TopMenuStyleProps>`
+export const MobileMenuWrapper = styled.div`
   position: absolute;
   border-radius: ${props => props.theme.mainBorderRadius};
   top: 40px;
   left: 0;
+  background: white;
+`
+
+export const MobileMenuPanel = styled.div<TopMenuStyleProps>`
+  border-radius: ${props => props.theme.mainBorderRadius};
   width: 200px;
   padding: 10px;
-  background-color: #f1f1f1;
   display: ${({ open }) => (open ? 'block' : 'none')};
   color: ${props => props.theme.white};
   font-size: 15px;
-  background: ${props => props.theme.mobileMenuBackground};
+  /* background: ${props => props.theme.mobileMenuBackground}; */
+  background: ${props => props.selectedIndex !== undefined && props.selectedIndex % 2 == 0 ? props.theme.contentOddSectionBackground : props.theme.contentEvenSectionBackground};
 `
 
 export const DesktopMenuPanelWrapper = styled.div`
