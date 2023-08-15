@@ -4,6 +4,9 @@ import facebook from '../../assets/icons/icon-facebook.svg';
 import instagram from '../../assets/icons/icon-instagram.svg';
 import reclamacoes from '../../assets/icons/livro_reclamacoes.png';
 import cpiaaDoor from '../../assets/photos/cpiaa-door.png';
+import entrance from '../../assets/photos/entrance.jpeg';
+import room1 from '../../assets/photos/room1.jpeg';
+import room2 from '../../assets/photos/room2.jpeg';
 import * as Styled from './Project.styled';
 
 export const PROJECT_CONTAINER_TEST_ID = 'project-container-test-id'
@@ -34,8 +37,12 @@ const Project: React.FC = () => {
                     <a href="https://www.instagram.com/cpiaa.2023/" target="_blank"><ReactSVG src={instagram} useRequestCache={true} /></a>
                 </Styled.SocialItem>
             </Styled.SocialLinksContainer>
+            <p><b>As nossas instalações</b></p>
             <Styled.PhotosWrapper>
                 <img src={cpiaaDoor} />
+                <img src={entrance} />
+                <img src={room1} />
+                <img src={room2} />
             </Styled.PhotosWrapper>
         </Styled.ProjectContainer>
     )

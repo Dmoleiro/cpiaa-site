@@ -7,6 +7,8 @@ export const mainTheme = {
     mobileMenuBackground: '#866599',
     contentEvenSectionBackground: '#866599E6',
     contentOddSectionBackground: '#5e9895E6',
+    flyerButtonColor: '#caf0f5',
+    flyerButtonColorSecondary: '#c4c3f3',
 
     light: '#83d4d0',
     regular: '#5e9895',
